@@ -16,6 +16,9 @@
         .container {
             text-align: center;
             margin-top: 20vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
         }
 
         .headshot {
@@ -23,14 +26,14 @@
             height: 100px;
             border-radius: 50%;
             margin-right: 20px;
-            display: inline-block;
+            align-self: flex-start;
         }
 
         h1 {
             font-size: 36px;
             color: #333;
-            display: inline-block;
-            vertical-align: middle;
+            margin: 0;
+            align-self: flex-start;
         }
 
         a {
@@ -40,7 +43,7 @@
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 20px;
+            margin-top: auto;
         }
 
         a:hover {
@@ -51,8 +54,10 @@
 <body>
     <div class="container">
         <img src="headshot.jpg" alt="Massage Therapist Headshot" class="headshot">
-        <h1>Massage Business Name</h1>
-        <a href="booking.html">Book Now</a>
+        <div>
+            <h1>Massage Business Name</h1>
+            <a href="booking.html">Book Now</a>
+        </div>
     </div>
 </body>
 </html>
